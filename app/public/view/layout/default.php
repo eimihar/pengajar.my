@@ -29,10 +29,10 @@
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav navbar-right">
             <li class="active">
-              <a href="#">Utama</a>
+              <a href="">Utama</a>
             </li>
             <li>
-              <a href="#">Hubungi</a>
+              <a href="">Hubungi</a>
             </li>
           </ul>
         </div>

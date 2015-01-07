@@ -1,9 +1,18 @@
 <div class="row">
 	<div class="col-sm-6" style="padding-top:34px;">
-		<ul class="nav nav-tabs">
-		  <li class="active"><a href="#">Artikel Terkini</a></li>
-		  <li><a href="#">Karier Pengajar</a></li>
-		</ul>
+		<div class="row">
+			<div class='col-sm-12'>
+			<ul class="nav nav-tabs">
+			  <li class="active"><a href="#">Artikel Terkini</a></li>
+			  <li><a href="#">Karier Dan Profesion</a></li>
+			</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12" style="padding:10px;padding-left:20px;">
+				Masih tiada artikel terkini lagi!
+			</div>
+		</div>
 	</div>
 	<div class="col-sm-6">
 		<div class="panel panel-default">
@@ -25,7 +34,8 @@
 								<?php echo $exe->form->password('userPassword', 'class="form-control" placeholder="Tidak kurang dari 5 aksara"');?>
 							</div>
 							<p>p/s : pengajar kemahiran sahaja.</p>
-							<button type="submit" class="btn btn-primary">Submit</button>
+							<button type="submit" class="btn btn-primary">Log Masuk</button>
+							<button type="submit" class="btn btn-danger">Daftar</button>
 						</form>
 					</div>
 				</div>
