@@ -20,7 +20,7 @@
 			<h3>Pengajar.My</h3>
 			</div>
 			<div class="panel-body">
-				<p>Sebuah laman bagi komuniti para pengajar kemahiran berkolaborasi dan berkongsi pendapat untuk menjadikan industri kita, sebuah industri yang gah, kerana kita bukan sahaja pengajar, tetapi sebahagian dari assets berkemahiran untuk negara.</p>
+				<p>Sebuah laman bagi komuniti pengajar kemahiran berkolaborasi dan berkongsi pendapat dan sumbangan untuk menjadikan industri kita, sebuah industri yang gah, kerana kita bukan sahaja pengajar, tetapi sebahagian dari assets berkemahiran untuk negara.</p>
 				<div class="row">
 					<div class="col-sm-12">
 						<form action="" method="POST" role="form">

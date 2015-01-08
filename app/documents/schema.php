@@ -55,16 +55,33 @@ $table['article_tag'] = array(
 	);
 
 /**
- * Databases
+ * Data
  */
 $table['centre'] = array(
 	"id"=>"increment",
 	"name"=>"varchar",
 	"state"=>"int",
-	"description"=>"text"
+	"description"=>"text",
+	'address'=>'text',
+	'timestamps'
 	);
 
-$tables['job'] = array(
+$table['job'] = array(
 	"id"=>"increment",
-	"title"=>""
+	'centreId'=>'int',
+	"title"=>"varchar",
+	'description'=>'text',
+	'type'=>'int',			// 1 = intern, 2 = part-time, 3 = full-time
+	"createdUser"=>"int",
+	"timestamps"
 	);
+
+$table['job_contact'] = array(
+	'id'=>'increment',
+	'jobId'=>'int',
+	'email'=>'varchar',
+	'phoneNo'=>'varchar',
+	'timestamps'
+	);
+
+return $table;

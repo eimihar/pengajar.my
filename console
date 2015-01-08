@@ -1,0 +1,31 @@
+<?php
+return function($exedra)
+{
+	## return application.
+	return $exedra->build("console",function($app)
+	{
+		$app->map->addRoute(Array(
+			"console"=>["uri"=>"","execute"=>function($exe)
+				{
+					$command			= $exe->param("command");
+					array_shift($command);
+
+					switch($command[0])
+					{
+						## update db using eloquent migrating builder.
+						case "updatedb":
+							$sb			= $exe->param("schemaBuilder");
+							$schema		= $sb['schema'];
+							$connection	= $sb['connection'];
+							
+							$eloquentSchemaBuilder	= new EloquentSchemaBuilder($connection);
+							$eloquentSchemaBuilder->execute($schema);
+						break;
+					}
+				}]
+			));
+	});
+}
+
+
+?>
