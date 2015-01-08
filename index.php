@@ -13,7 +13,7 @@ $app = $exedra->build('app', function($app)
 	$db = $app->config->get('db');
 	$eloquent	= new \EloquentUtils\Extension\Eloquent($db['host'], $db['user'], $db['pass'], $db['name']);
 	$app->eloquentCapsule = $eloquent->getCapsule();
-	
+
 	// api routes
 	$app->map->addRoute(array(
 		'api'=> ['subapp'=> 'api','uri'=>'api', 'subroute'=> array(
@@ -27,6 +27,13 @@ $app = $exedra->build('app', function($app)
 	$app->map->addRoute(array(
 		'public'=> ['subapp'=>'public', 'bind:middleware'=> 'middleware=public@handle', 'subroute'=> array(
 			'main'=>['uri'=>'', 'execute'=>"controller=main@index"]
+			)]
+		));
+
+	// backend
+	$app->map->addRoute(array(
+		'backend'=> ['subapp'=> 'backend', 'subroute'=> array(
+			'default'=> ['uri'=>'admin/[:controller]/[**:action]', 'execute'=> 'controller={controller}@{action}']
 			)]
 		));
 });

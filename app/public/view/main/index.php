@@ -23,20 +23,25 @@
 				<p>Sebuah laman bagi komuniti pengajar kemahiran berkolaborasi dan berkongsi pendapat dan sumbangan untuk menjadikan industri kita, sebuah industri yang gah, kerana kita bukan sahaja pengajar, tetapi sebahagian dari assets berkemahiran untuk negara.</p>
 				<div class="row">
 					<div class="col-sm-12">
-						<form action="" method="POST" role="form">
-							<legend>Sertai Kami!</legend>
-							<div class="form-group">
-								<label for="">Email</label>
-								<?php echo $exe->form->text('userEmail', 'class="form-control" placeholder="Email anda"');?>
-							</div>
-							<div class="form-group">
-								<label for="">Kata-Laluan</label>
-								<?php echo $exe->form->password('userPassword', 'class="form-control" placeholder="Tidak kurang dari 5 aksara"');?>
-							</div>
-							<p>p/s : pengajar kemahiran sahaja.</p>
-							<button type="submit" class="btn btn-primary">Log Masuk</button>
-							<button type="submit" class="btn btn-danger">Daftar</button>
-						</form>
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#">Log Masuk</a></li>
+							<li><a href="#">Daftar</a></li>
+						</ul>
+						<div>
+							<form action="" method="POST" role="form">
+								<div class="form-group">
+									<label for="">Email</label>
+									<?php echo $exe->form->text('userEmail', 'class="form-control" placeholder="Email anda"');?>
+								</div>
+								<div class="form-group">
+									<label for="">Kata-Laluan</label>
+									<?php echo $exe->form->password('userPassword', 'class="form-control" placeholder="Tidak kurang dari 5 aksara"');?>
+								</div>
+								<p>p/s : pengajar kemahiran sahaja.</p>
+								<button type="submit" class="btn btn-primary">Log Masuk</button>
+								<button type="submit" class="btn btn-danger">Daftar</button>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>

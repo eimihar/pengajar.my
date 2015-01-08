@@ -84,4 +84,24 @@ $table['job_contact'] = array(
 	'timestamps'
 	);
 
+/**
+ * 	Contribution
+ */
+$table['contribution_code'] = array(
+	'id'=>'increment',
+	'code'=>'varchar',
+	'description'=>'text',
+	'table'=>'varchar', // related table.
+	'timestamps'
+	);
+
+$table['contribution'] = array(
+	'id'=> 'increment',
+	'userId'=>'int',
+	'refId'=>'int',
+	'code'=> 'varchar',
+	'value'=> 'float',
+	'timestamps'
+	);
+
 return $table;
